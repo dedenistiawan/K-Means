@@ -2,6 +2,7 @@ library(readr)
 urlfile = "https://raw.githubusercontent.com/dedenistiawan/Dataset/main/BDT.csv"
 data<-read.csv(url(urlfile), row.names = "Kabupaten")
 
+
 #View the firt 3 rows of the data
 head(data, n =3)
 
@@ -70,6 +71,7 @@ km.res$size
 
 # Cluster means
 km.res$centers
+fviz_cluster(km.res, data = data)
 
 fviz_cluster(km.res, data = data,
              palette = c("#2E9FDF", "#00AFBB", "#E7B800", "#FC4E07"),
