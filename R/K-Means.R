@@ -1,7 +1,7 @@
 library(readr)
 urlfile = "https://raw.githubusercontent.com/dedenistiawan/Dataset/main/BDT.csv"
 data<-read.csv(url(urlfile), row.names = "Kabupaten")
-
+a
 
 #View the firt 3 rows of the data
 head(data, n =3)
